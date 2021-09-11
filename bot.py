@@ -27,7 +27,7 @@ async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
 @bot.command(name='ping',help='Sendet einen Ping')
-    async def ping(ctx,s: str):
-        ctx.send('pong')
+async def ping(ctx):
+    ctx.send('pong')
 
 bot.run(TOKEN)
